@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+    <!--默认配置-->
+    <default-config>
+        <!--数据库驱动类 name属性值driverClass是固定的-->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <!--连接数据库的url-->
+        <property name="jdbcUrl">jdbc:mysql:///day04_db</property>
+        <!--数据库的用户名-->
+        <property name="user">root</property>
+        <!--数据库的密码-->
+        <property name="password">1234</property>
+    </default-config>
+
+    <!-- This app is massive! -->
+    <!--有名字配置-->
+    <!--连接day03_db数据库-->
+    <!--name="day03_db" 属性值随便定义-->
+    <named-config name="day03_db">
+        <!--数据库驱动类 name属性值driverClass是固定的-->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <!--连接数据库的url-->
+        <property name="jdbcUrl">jdbc:mysql:///day03_db</property>
+        <!--数据库的用户名-->
+        <property name="user">root</property>
+        <!--数据库的密码-->
+        <property name="password">1234</property>
+    </named-config>
+</c3p0-config>

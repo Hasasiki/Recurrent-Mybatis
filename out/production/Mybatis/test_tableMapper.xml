@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hasasiki.mapper.TestMapper">
+    <!--
+        1.select标签表示查询标签
+        2.id是唯一的，在映射文件中可以具有多个select标签，但是id是唯一的
+        3.resultType 表示select的查询语句查询的结果封装到哪个对象的类型，
+        例如我们下面想将数据表的所有用户信息封装到实体类User中，那么这里就必须书写User类的全路径(包名.类名)
+    -->
+    <select id="queryAll" resultType="com.hasasiki.pojo.test_table">
+        select * from test_table
+    </select>
+</mapper>
